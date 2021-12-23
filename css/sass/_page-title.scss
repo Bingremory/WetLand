@@ -1,0 +1,108 @@
+.page-title {
+  min-height: 400px;
+  background-image: url(../img/page-title.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  &--shape {
+    img {
+      position: absolute;
+      &.page-title--dot {
+        left: 32%;
+        bottom: 10%;
+      }
+      &.page-title--dot-2 {
+        right: 19%;
+        top: 20%;
+      }
+      &.page-title--dot-3 {
+        right: 9%;
+        top: 6%;
+      }
+      &.page-title--dot-4 {
+        left: 0;
+        top: 21%;
+      }
+      &.page-title--plus {
+        right: 0;
+        bottom: -17%;
+      }
+      &.page-title--triangle {
+        left: 19%;
+        top: 32%;
+        -webkit-animation: page-triangle 5s linear infinite;
+        -moz-animation: page-triangle 5s linear infinite;
+        -o-animation: page-triangle 5s linear infinite;
+        animation: page-triangle 5s linear infinite;
+      }
+    }
+  }
+}
+
+.page-hero {
+  &--title {
+    text-align: center;
+    h3 {
+      font-size: 60px;
+      color: $white;
+      margin-bottom: 15px;
+      &.blog-details--heading {
+        font-size: 40px;
+        @media #{$xs} {
+          font-size: 30px;
+        }
+      }
+    }
+    @media #{$md} {
+      font-size: 45px;
+    }
+    @media #{$sm} {
+      font-size: 35px;
+    }
+    @media #{$xs} {
+      font-size: 35px;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        position: relative;
+        color: $white;
+        font-size: 15px;
+        font-weight: 600;
+        &:not(:first-child) {
+          margin-left: 40px;
+        }
+        a {
+          color: inherit;
+          position: relative;
+          &::after {
+            position: absolute;
+            content: "";
+            background: $white;
+            width: 5px;
+            height: 5px;
+            border-radius: 100rem;
+            right: -50%;
+            top: 50%;
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes page-triangle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

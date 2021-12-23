@@ -1,0 +1,318 @@
+.hero {
+  position: relative;
+  min-height: 950px;
+  display: flex;
+  align-items: center;
+  @media #{$lg} {
+    min-height: 850px;
+  }
+  @media #{$md} {
+    min-height: 900px;
+  }
+  @media #{$sm} {
+    min-height: 900px;
+  }
+  @media #{$xs} {
+    min-height: 800px;
+  }
+  .hero-shape {
+    img {
+      position: absolute;
+      &.hero-2-dot {
+        left: 2%;
+        top: 40%;
+        -webkit-animation: hero-circle-2 4s linear 0s infinite alternate;
+        -moz-animation: hero-circle-2 4s linear 0s infinite alternate;
+        -o-animation: hero-circle-2 4s linear 0s infinite alternate;
+        animation: hero-circle-2 4s linear 0s infinite alternate;
+      }
+      &.hero-2-dot-2 {
+        right: 7%;
+        top: 14%;
+        -webkit-animation: hero-circle-2 4s linear 0s infinite alternate;
+        -moz-animation: hero-circle-2 4s linear 0s infinite alternate;
+        -o-animation: hero-circle-2 4s linear 0s infinite alternate;
+        animation: hero-circle-2 4s linear 0s infinite alternate;
+      }
+      &.hero-2-flower {
+        right: 2%;
+        bottom: 12%;
+        @media #{$sm} {
+          bottom: -13%;
+        }
+        @media #{$xs} {
+          bottom: -13%;
+        }
+      }
+      &.hero-2-triangle {
+        left: 2%;
+        top: 12%;
+        -webkit-animation: hero-triangle-2 5s linear infinite;
+        -moz-animation: hero-triangle-2 5s linear infinite;
+        -o-animation: hero-triangle-2 5s linear infinite;
+        animation: hero-triangle-2 5s linear infinite;
+      }
+      &.hero-2-triangle-2 {
+        right: 7%;
+        bottom: 50%;
+        -webkit-animation: hero-triangle-2 5s linear infinite;
+        -moz-animation: hero-triangle-2 5s linear infinite;
+        -o-animation: hero-triangle-2 5s linear infinite;
+        animation: hero-triangle-2 5s linear infinite;
+      }
+    }
+  }
+
+  .hero-item {
+    .section-title {
+      color: $text-green;
+      background: $bg-green;
+    }
+    h1 {
+      font-size: 60px;
+      line-height: 72px;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+      @media #{$xs} {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+    p {
+      font-size: 17px;
+      line-height: 26px;
+      margin-bottom: 45px;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      li {
+        margin-right: 42px;
+      }
+    }
+  }
+
+  .hero-image {
+    position: relative;
+    margin-left: 0;
+    height: 400px;
+    @media #{$sm} {
+      width: auto;
+      height: auto;
+      margin-left: 0;
+    }
+    @media #{$xs} {
+      height: auto;
+      width: auto;
+    }
+    img {
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      box-shadow: 0px 30px 70px 0px rgb(11 6 70 / 12%);
+      -moz-box-shadow: 0px 30px 70px 0px rgb(11 6 70 / 12%);
+      -webkit-box-shadow: 0px 30px 70px 0px rgb(11 6 70 / 12%);
+      -webkit-animation: hero-thumb 2s linear infinite alternate;
+      animation: hero-thumb 2s linear infinite alternate;
+      -moz-animation: hero-thumb 2s linear infinite alternate;
+      -o-animation: hero-thumb 2s linear infinite alternate;
+      &.hero-dashboard {
+        @media #{$sm} {
+          width: 100%;
+        }
+        @media #{$xs} {
+          width: 100%;
+        }
+      }
+      &.hero-girl {
+        position: absolute;
+        left: -100px;
+        bottom: -23px;
+        box-shadow: none;
+        @media #{$xs} {
+          display: none;
+        }
+      }
+      &.hero-ui {
+        position: absolute;
+        left: 67px;
+        bottom: -40px;
+        animation: hero-ui 4s linear infinite alternate;
+        -webkit-animation: hero-ui 4s linear infinite alternate;
+        -o-animation: hero-ui 4s linear infinite alternate;
+        -moz-animation: hero-ui 4s linear infinite alternate;
+        @media #{$xl} {
+          display: none;
+        }
+      }
+      &.hero-avc {
+        right: -30px;
+        bottom: 50px;
+        position: absolute;
+        animation: hero-avc 4s linear infinite alternate;
+        -webkit-animation: hero-avc 4s linear infinite alternate;
+        -moz-animation: hero-avc 4s linear infinite alternate;
+        -o-animation: hero-avc 4s linear infinite alternate;
+        @media #{$xl} {
+          right: -30px;
+        }
+        @media #{$md} {
+          right: -30px;
+        }
+        @media #{$sm} {
+          right: -30px;
+        }
+        @media #{$xs} {
+          display: none;
+        }
+      }
+      &.hero-design {
+        position: absolute;
+        right: -35px;
+        top: -70px;
+        animation: hero-design 4s linear infinite alternate;
+        -webkit-animation: hero-design 4s linear infinite alternate;
+        -moz-animation: hero-design 4s linear infinite alternate;
+        -o-animation: hero-design 4s linear infinite alternate;
+        @media #{$sm} {
+          right: 30px;
+        }
+        @media #{$xs} {
+          display: none;
+        }
+      }
+      &.hero-circle-1 {
+        right: -30px;
+        position: absolute;
+        bottom: -135px;
+        z-index: -1;
+        box-shadow: none;
+        animation: none;
+        -webkit-animation: none;
+        -moz-animation: none;
+        -o-animation: none;
+        @media #{$xl} {
+          right: -30px;
+        }
+        @media #{$xl} {
+          right: -30px;
+        }
+        @media #{$sm} {
+          right: -30px;
+        }
+        @media #{$xs} {
+          right: -10px;
+        }
+      }
+      &.hero-circle-2 {
+        position: absolute;
+        right: 140px;
+        top: -82px;
+        z-index: -1;
+        box-shadow: none;
+        animation-duration: 2.5s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-name: hero-bounce;
+      }
+      &.hero-leaf {
+        position: absolute;
+        top: -140px;
+        right: -30px;
+        box-shadow: none;
+        z-index: -1;
+        @media #{$xl} {
+          right: -30px;
+        }
+        @media #{$md} {
+          right: -30px;
+        }
+        @media #{$sm} {
+          right: -30px;
+        }
+        @media #{$xs} {
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+@keyframes hero-bounce {
+  0%,
+  20%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes hero-thumb {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-ui {
+  0% {
+    transform: translate(50px, -20px);
+  }
+  100% {
+    transform: translate(0, -20px);
+  }
+}
+
+@keyframes hero-avc {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-design {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes hero-circle-2 {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes hero-triangle-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hero-triangle-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,146 @@
+.faq {
+  position: relative;
+  padding: 100px 0;
+  background: $white;
+
+  @media #{$lg} {
+    padding: 85px 0;
+  }
+
+  @media #{$md} {
+    padding: 75px 0;
+  }
+  @media #{$sm} {
+    padding: 60px 0;
+  }
+
+  @media #{$xs} {
+    padding: 50px 0;
+  }
+
+  .accordion-container {
+    padding: 0 40px;
+    border-top: 3px solid $primary;
+    border-radius: 20px;
+    box-shadow: 0px 30px 70px 0px rgb(11 6 70 / 8%),
+      inset 0px 3px 0px 0px rgb(47 128 237 / 0%);
+    background: $white;
+    @media #{$lg} {
+      padding: 0 30px;
+    }
+    @media #{$sm} {
+      padding: 0 20px;
+    }
+    @media #{$xs} {
+      padding: 0 20px;
+    }
+    .accordion-item {
+      padding: 35px 0;
+      border-bottom: 1px solid #eaedff;
+
+      .accordion-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        h3 {
+          font-weight: 600;
+        }
+        h3,
+        i {
+          transition: all 0.2s ease-in-out;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+        }
+        &:hover {
+          h3,
+          i {
+            color: $primary;
+          }
+        }
+      }
+      .accordion-content {
+        overflow: hidden;
+        height: 0;
+        transition: all 0.4s ease-in-out;
+        p {
+          padding-top: 15px;
+        }
+      }
+    }
+  }
+  .accordion-open .accordion-icon {
+    transform: rotate(45deg);
+  }
+
+  .ml {
+    margin-left: 8.3333%;
+    @media #{$lg} {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    @media #{$md} {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    @media #{$sm} {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    @media #{$xs} {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+  .faq-item {
+    @media #{$md} {
+      padding: 0 30px;
+    }
+    h2 {
+      font-size: 40px;
+      line-height: 52px;
+      margin-bottom: 20px;
+      @media #{$md} {
+        font-size: 35px;
+      }
+      @media #{$sm} {
+        font-size: 26px;
+      }
+      @media #{$xs} {
+        font-size: 24px;
+      }
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    .faq-box {
+      display: flex;
+      align-items: center;
+
+      .faq-count {
+        margin-right: 30px;
+        @media #{$xs} {
+          margin-right: auto;
+        }
+        h3 {
+          font-size: 40px;
+          margin-bottom: 5px;
+          &.pink {
+            color: #fe1a86;
+          }
+          &.blue {
+            color: #0242fd;
+          }
+          &.yellow {
+            color: #f5a706;
+          }
+        }
+        p {
+          color: #474554;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
