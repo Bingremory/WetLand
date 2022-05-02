@@ -123,6 +123,10 @@ button {
   margin-bottom: 15px;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .container,
 .container-fluid,
 .container-lg,
@@ -613,6 +617,10 @@ button {
   background: white;
   width: 100%;
   transition: all 0.2s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
 }
 .header.sticky {
   position: fixed;
@@ -1196,6 +1204,14 @@ button {
 .service .service-item .service-desc a:hover {
   color: #2f80ed;
 }
+.service .service-item .service-desc p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
 
 .service-area {
   padding: 100px 0;
@@ -1287,6 +1303,12 @@ button {
 }
 .service-area .service-area--item .service-area--content p {
   margin-bottom: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
 }
 .service-area .service-area--item .service-area--content a {
   font-weight: 600;
@@ -2833,6 +2855,12 @@ button {
   line-height: 1.5;
   margin-bottom: 25px;
   font-weight: 700;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
 }
 .blog-area .blog-area--item .blog-area--content .blog-area--heading:hover {
   color: #1c7df8;
@@ -2910,6 +2938,12 @@ button {
   font-size: 26px;
   color: #021937;
   margin-bottom: 15px;
+}
+.blog-details .post-item .post-content .post-title a {
+  color: inherit;
+}
+.blog-details .post-item .post-content .post-title a:hover {
+  color: #2f80ed;
 }
 .blog-details .post-item .post-content .post-content p {
   color: #6a727f;
