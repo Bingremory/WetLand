@@ -3,6 +3,10 @@
   background: $white;
   width: 100%;
   transition: all 0.2s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
   &.sticky {
     position: fixed;
     background: $white;
