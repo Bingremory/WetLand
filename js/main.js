@@ -1,3 +1,219 @@
+var multipleHeader = `<header class="header">
+<nav class="nav container">
+  <a href="index.html" class="logo">
+    <img src="../img/logo.png" alt="" />
+  </a>
+  <nav class="navbar">
+    <li><a href="index.html" class="menu-link">Home</a></li>
+    <li><a href="about.html" class="menu-link">About</a></li>
+    <li class="has-dropdown">
+      <a href="service.html" class="menu-link"
+        >Service <i class="far fa-chevron-down"></i
+      ></a>
+      <ul class="sub-menu">
+        <li><a href="service.html">Service</a></li>
+        <li><a href="service-details.html">Service Details</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown">
+      <a href="blog.html" class="menu-link"
+        >Blog <i class="far fa-chevron-down"></i
+      ></a>
+      <ul class="sub-menu">
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="blog-details.html">Blog Details</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown">
+      <a href="portfolio.html" class="menu-link"
+        >Pages <i class="far fa-chevron-down"></i
+      ></a>
+      <ul class="sub-menu">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="sign-up.html">Sign Up</a></li>
+        <li><a href="login.html">Sign In</a></li>
+      </ul>
+    </li>
+    <li><a href="contact.html" class="menu-link">Contact</a></li>
+  </nav>
+  <div class="button-header">
+    <a href="login.html" class="btn-n">Login</a>
+    <a href="contact.html" class="btn-h">Get Started</a>
+  </div>
+  <div class="bx bx-menu menu-open"></div>
+</nav>
+</header>`;
+document.body.insertAdjacentHTML("beforeend", multipleHeader);
+
+var multipleSidebar = `
+<div class="sidebar-area">
+<div class="sidebar-wrapper">
+  <div class="sidebar-close bx bx-x"></div>
+  <div class="sidebar-content">
+    <div class="logo">
+      <a href="index.html">
+        <img src="../img/logo.png" alt="" />
+      </a>
+    </div>
+    <div class="mobile-menu">
+      <div class="menu-bar">
+        <nav class="menu-nav">
+          <ul class="sidebar-container">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li class="has-dropdown">
+              <a href="service.html">Services</a>
+              <ul class="submenu">
+                <li><a href="service.html">Services</a></li>
+                <li>
+                  <a href="service-details.html">Services Details</a>
+                </li>
+              </ul>
+              <a href="#" class="menu-expand">
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </li>
+            <li class="has-dropdown">
+              <a href="blog.html">Blog</a>
+              <ul class="submenu">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="blog-details.html">Blog Details</a></li>
+              </ul>
+              <a href="#" class="menu-expand">
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </li>
+            <li class="has-dropdown">
+              <a href="about.html">Pages</a>
+              <ul class="submenu">
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="sign-up.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+              </ul>
+              <a href="#" class="menu-expand">
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+</div>`;
+document.body.insertAdjacentHTML("beforeend", multipleSidebar);
+
+var multipleFooter = `
+<footer class="footer">
+<div class="footer-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+        <div class="footer-thumb">
+          <div class="footer-logo">
+            <a href="#!">
+              <img src="../img/logo.png" alt="" />
+            </a>
+          </div>
+          <div class="footer-desc">
+            <p>Ever since we started using we’ve , and more.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+        <div class="footer-list">
+          <div class="footer-header">
+            <h3>Overview</h3>
+          </div>
+          <div class="footer-content">
+            <ul>
+              <li><a href="#!">Terms</a></li>
+              <li><a href="#!">Privacy Policy</a></li>
+              <li><a href="#!">Cookies</a></li>
+              <li><a href="#!">Integrations</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+        <div class="footer-list">
+          <div class="footer-header">
+            <h3>Customer</h3>
+          </div>
+          <div class="footer-content">
+            <ul>
+              <li><a href="#!">Home</a></li>
+              <li><a href="#!">Product</a></li>
+              <li><a href="#!">Pricing</a></li>
+              <li><a href="#!">Integrations</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+        <div class="footer-list">
+          <div class="footer-header">
+            <h3>Product</h3>
+          </div>
+          <div class="footer-content">
+            <ul>
+              <li><a href="#!">Getting Started</a></li>
+              <li><a href="#!">Style Guide</a></li>
+              <li><a href="#!">Licences</a></li>
+              <li><a href="#!">Changelog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+        <div class="footer-box--social">
+          <div class="footer-header">
+            <h3>Follow Us</h3>
+          </div>
+          <div class="footer-social">
+            <ul>
+              <li>
+                <a href="#!"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#!"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#!"><i class="fab fa-pinterest-p"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="footer-wrapper">
+          <p>
+            Copyright © 2021 All Rights Reserved passion by
+            <a href="#!">ThemePure</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>`;
+document.body.insertAdjacentHTML("beforeend", multipleFooter);
+
 new WOW().init();
 
 const menuOpen = document.querySelector(".menu-open");
@@ -146,7 +362,7 @@ $(".grid").imagesLoaded(function () {
   });
 });
 
-$(document).keydown(function (event) {
+/* $(document).keydown(function (event) {
   if (event.keyCode == 123) {
     // Prevent F12
     return false;
@@ -178,4 +394,4 @@ $(document).keypress("u", function (e) {
   } else {
     return true;
   }
-});
+}); */
